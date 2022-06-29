@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.satisListelemeController">
+   <children>
+      <TableView fx:id="tableview" layoutX="134.0" layoutY="86.0" prefHeight="450.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tvparkyeri" prefWidth="75.0" text="Park Yeri" />
+            <TableColumn fx:id="tvplaka" prefWidth="75.0" text="Plaka" />
+            <TableColumn fx:id="tvgelis" prefWidth="75.0" text="Geliş Tarihi" />
+            <TableColumn fx:id="tvcikis" prefWidth="75.0" text="Çıkış Tarihi" />
+            <TableColumn fx:id="tvsure" prefWidth="75.0" text="Süre" />
+            <TableColumn fx:id="tvtutar" prefWidth="75.0" text="Tutar" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

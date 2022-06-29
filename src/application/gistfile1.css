@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Cotford Display Bold';
+    src: url('Cotford Text Bold.ttf');
+}
+
+.text {
+    -fx-font-family: "Cotford Display Bold";
+}

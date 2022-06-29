@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.ornek1Controller">
+   <children>
+      <SplitPane dividerPositions="0.5785953177257525" layoutX="166.0" layoutY="178.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="53.0" layoutY="23.0" onMouseClicked="#tableViewOnClicked" prefHeight="343.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tvid" prefWidth="112.0" text="id" />
+                      <TableColumn fx:id="tvkuladi" prefWidth="248.0" text="kul_adi" />
+                        <TableColumn fx:id="tvsifre" prefWidth="237.0" text="sifre" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnEkle" layoutX="266.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnEkleOnAction" prefWidth="75.0" text="Ekle" />
+                  <Button fx:id="btnSil" layoutX="266.0" layoutY="65.0" mnemonicParsing="false" onAction="#btnSilOnAction" prefWidth="75.0" text="Sil" />
+                  <Button fx:id="btnGuncelle" layoutX="266.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnGuncelleOnAction" prefWidth="75.0" text="Güncelle" />
+                  <Button fx:id="btnGoster" layoutX="137.0" layoutY="153.0" mnemonicParsing="false" onAction="#btnGosterOnAction" prefWidth="75.0" text="Goster" />
+                  <TextField fx:id="txtID" layoutX="62.0" layoutY="30.0" promptText="id" />
+                  <TextField fx:id="txtKul_adi" layoutX="62.0" layoutY="65.0" promptText="kul_adi" />
+                  <TextField fx:id="txtSifre" layoutX="62.0" layoutY="100.0" promptText="sifre" />
+                  <Label fx:id="lbldeger" layoutX="299.0" layoutY="178.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
